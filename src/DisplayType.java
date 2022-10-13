@@ -1,3 +1,3 @@
 public enum DisplayType {
-    CONSOLE, CSV
+    CONSOLE, CSV, NOTYETDEFINED
 }
