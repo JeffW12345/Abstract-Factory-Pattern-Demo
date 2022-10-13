@@ -18,7 +18,7 @@ public class DisplayToCSV implements Display {
 
     private static void writeToNewFile(String toDisplay, String filepath) throws IOException {
         FileWriter myWriter = new FileWriter(filepath);
-        myWriter.write(toDisplay);
+        myWriter.write(toDisplay + "\n");
     }
 
     private void appendToFile(String toDisplay, String filepath) throws IOException {
