@@ -1,2 +1,2 @@
 # Abstract-Factory-Pattern-Demo
-Glue classes are given a name and price, and the user can print them to a console or to a spreadsheet
+Instances of classes inheriting from class Glue are initialised with name and price variables. The user can print those values to a console or to a spreadsheet using objects that implement a Display interface. 
