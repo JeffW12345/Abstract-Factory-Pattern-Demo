@@ -12,7 +12,7 @@ public class Main {
         factory = new GlueWithDisplayConcreteFactory(DisplayType.CSV, GlueType.PRITSTICK, 1.01,
         "Prit stick");
         factory.glue.display();
+        final GlueFactory glueFactory = new GlueFactory();
+        var gf = glueFactory;
     }
-
-
 }
