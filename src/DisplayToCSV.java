@@ -2,7 +2,7 @@ import java.io.*;
 
 public class DisplayToCSV implements Display {
     @Override
-    public void displayOutput(String toDisplay) throws IOException {
+    public void displayOutput(String toDisplay) {
         String filepath = "C:/test.csv";
         if(new File(filepath).exists()){
             appendToFile(toDisplay, filepath);
@@ -12,7 +12,7 @@ public class DisplayToCSV implements Display {
         }
     }
 
-    private void writeToNewFile(String toDisplay, String filepath) throws IOException {
+    private void writeToNewFile(String toDisplay, String filepath) {
         try{
             FileWriter myWriter = new FileWriter(filepath);
             myWriter.write(toDisplay + "\n");
@@ -25,7 +25,7 @@ public class DisplayToCSV implements Display {
 
     }
 
-    private void appendToFile(String toDisplay, String filepath) throws IOException {
+    private void appendToFile(String toDisplay, String filepath) {
         try
         {
             String filename= filepath;
