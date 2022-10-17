@@ -1,3 +1,6 @@
+package main;
+
+import main.Display;
 
 public class DisplayOnConsole implements Display {
 

@@ -1,3 +1,7 @@
+package main;
+
+import main.Display;
+
 public class DisplayFactory {
 
     public Display create(DisplayType displayType) {

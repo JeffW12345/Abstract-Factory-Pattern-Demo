@@ -1,3 +1,8 @@
+package main;
+
+import main.Display;
+import main.Glue;
+
 public class GlueFactory {
 
     public Glue create(GlueType glueType, String name, double price, Display display){

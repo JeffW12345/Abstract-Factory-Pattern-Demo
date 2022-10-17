@@ -1,7 +1,9 @@
+package test;
+
+import main.*;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class GlueFactoryTests {
     GlueFactory glueFactory = new GlueFactory();
@@ -19,11 +21,6 @@ public class GlueFactoryTests {
     @Test
     public void glueFactory_Should_Return_WoodGlue_When_Asked(){
         assertThat(glueFactory.create(GlueType.WOODGLUE,"test", 0, new DisplayOnConsole())).isExactlyInstanceOf(WoodGlue.class);
-    }
-
-    @Test
-    public void glueFactory_Should_Throw_Exception_If_Asked_To_Retrieve_Magic_Glue(){
-        assertThrows(InvalidGlueSpecifiedException.class, () -> glueFactory.create(GlueType.MAGICGLUE, "test", 0, new DisplayOnConsole()));
     }
 
 }

@@ -1,3 +1,7 @@
+package main;
+
+import main.*;
+
 public class GlueWithDisplayConcreteFactory implements GlueWithDisplayAbstractFactory{
     private Display display;
     Glue glue;

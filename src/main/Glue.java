@@ -1,3 +1,7 @@
+package main;
+
+import main.Display;
+
 import java.io.IOException;
 
 public abstract class Glue {
