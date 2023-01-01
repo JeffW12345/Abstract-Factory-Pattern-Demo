@@ -1,7 +1,11 @@
 package main;
 
-import main.Display;
-import main.Glue;
+import main.display_object.Display;
+import main.exception.InvalidGlueSpecifiedException;
+import main.glue_object.Glue;
+import main.glue_object.Pritstick;
+import main.glue_object.SuperGlue;
+import main.glue_object.WoodGlue;
 
 public class GlueFactory {
 

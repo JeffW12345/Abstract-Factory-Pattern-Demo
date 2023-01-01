@@ -1,7 +1,7 @@
 package main;
 
-import main.Display;
-import main.Glue;
+import main.display_object.Display;
+import main.glue_object.Glue;
 
 public interface GlueWithDisplayAbstractFactory {
     Display createDisplay();

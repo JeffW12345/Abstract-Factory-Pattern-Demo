@@ -1,13 +1,12 @@
 package test;
 
 import main.DisplayFactory;
-import main.DisplayOnConsole;
-import main.DisplayToCSV;
+import main.display_object.DisplayOnConsole;
+import main.display_object.DisplayToCSV;
 import main.DisplayType;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
     public class DisplayFactoryTests {
         DisplayFactory displayFactory = new DisplayFactory();

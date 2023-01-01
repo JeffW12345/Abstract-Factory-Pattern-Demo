@@ -1,6 +1,10 @@
 package test;
 
 import main.*;
+import main.display_object.DisplayOnConsole;
+import main.glue_object.Pritstick;
+import main.glue_object.SuperGlue;
+import main.glue_object.WoodGlue;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

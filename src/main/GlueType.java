@@ -1,5 +1,5 @@
 package main;
 
 public enum GlueType {
-    SUPERGLUE,WOODGLUE, PRITSTICK, MAGICGLUE
+    SUPERGLUE, WOODGLUE, PRITSTICK
 }

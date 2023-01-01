@@ -1,6 +1,4 @@
-package main;
-
-import main.Display;
+package main.display_object;
 
 public class DisplayOnConsole implements Display {
 

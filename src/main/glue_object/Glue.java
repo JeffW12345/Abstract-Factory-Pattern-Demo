@@ -1,6 +1,6 @@
-package main;
+package main.glue_object;
 
-import main.Display;
+import main.display_object.Display;
 
 import java.io.IOException;
 
@@ -31,5 +31,5 @@ public abstract class Glue {
 
     public void display() throws IOException {
         display.displayOutput(name + "," + price);
-    };
+    }
 }

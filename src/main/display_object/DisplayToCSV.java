@@ -1,6 +1,7 @@
-package main;
+package main.display_object;
 
-import main.Display;
+import main.DisplayType;
+import main.exception.InvalidDisplaySpecifiedException;
 
 import java.io.*;
 

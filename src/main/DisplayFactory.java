@@ -1,6 +1,9 @@
 package main;
 
-import main.Display;
+import main.display_object.Display;
+import main.display_object.DisplayOnConsole;
+import main.display_object.DisplayToCSV;
+import main.exception.InvalidDisplaySpecifiedException;
 
 public class DisplayFactory {
 

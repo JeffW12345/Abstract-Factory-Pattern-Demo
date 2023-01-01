@@ -1,12 +1,14 @@
 package main;
 
-import main.*;
+import main.display_object.Display;
+import main.display_object.DisplayToCSV;
+import main.glue_object.Glue;
 
 public class GlueWithDisplayConcreteFactory implements GlueWithDisplayAbstractFactory{
-    private Display display;
-    Glue glue;
-    private GlueType glueType;
-    private DisplayType displayType;
+    private final Display display;
+    private final Glue glue;
+    private final GlueType glueType;
+    private final DisplayType displayType;
     private double price;
     private String name;
     private DisplayFactory displayFactory = new DisplayFactory();
@@ -29,6 +31,6 @@ public class GlueWithDisplayConcreteFactory implements GlueWithDisplayAbstractFa
 
     @Override
     public Glue createGlue() {
-        return glueFactory.create(GlueType.PRITSTICK, name, price, this.display);
+        return glueFactory.create(glueType, name, price, this.display);
     }
 }
